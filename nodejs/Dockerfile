@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:16.04 AS ubuntu16
 MAINTAINER Kimbro Staken
 
 RUN apt-get install -y software-properties-common python
