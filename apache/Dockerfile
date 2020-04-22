@@ -1,10 +1,11 @@
 # A basic apache server. To use either add or bind mount content under /var/www
-ARG BASE_IMAGE_NAME=ubuntu
-ARG BASE_IMAGE_TAG=12.04
-ARG MAIN=Kimbro Staken version: 0.1
+#ARG BASE_IMAGE_NAME=ubuntu
+#ARG BASE_IMAGE_TAG=12.04
+
 #FROM ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
 FROM ubuntu:12.04
 #MAINTAINER Kimbro Staken version: 0.1
+ARG MAIN=Kimbro Staken version: 0.1
 MAINTAINER ${MAIN}
 ARG ANSH="Arg After FROM"
 RUN echo ${MAIN}
